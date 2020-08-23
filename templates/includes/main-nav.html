@@ -1,0 +1,41 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-off-white mr-5" href="#" id="all-photos-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Shop Photos
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-photos-link">
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Photos</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-off-white mr-5" href="#" id="portfolio-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portfolio
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="portfolio-link">
+                <a href="{% url 'products' %}?category=portraits" class="dropdown-item">Portraits</a>
+                <a href="{% url 'products' %}?category=landscapes" class="dropdown-item">Landscapes</a>
+                <a href="{% url 'products' %}?category=architecture" class="dropdown-item">Architecture</a>
+                <a href="{% url 'products' %}?category=abstract" class="dropdown-item">Abstract</a>
+                <a href="{% url 'products' %}?category=product_photography" class="dropdown-item">Product Photography</a>
+                <a href="{% url 'products' %}?category=weddings" class="dropdown-item">Weddings</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-off-white mr-5" href="#" id="about-link" aria-haspopup="false" aria-expanded="false">
+                About
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-off-white mr-5" href="#" id="contact-link" aria-haspopup="false" aria-expanded="false">
+                Contact
+            </a>
+        </li>
+    </ul>
+</div>
